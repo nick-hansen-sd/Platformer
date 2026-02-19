@@ -74,6 +74,14 @@ public class LevelParser : MonoBehaviour
                 // Todo - Position the new GameObject at the appropriate location by using row and column
                 // Todo - Parent the new GameObject under levelRoot
 
+                if (currentChar == 'x')
+                {
+                    Vector3 position = new Vector3(columnIndex + 0.5f, row + 0.5f, 0);
+                    Transform rockInstance = Instantiate(rockPrefab, levelRoot).transform;
+                    rockInstance.position = position;
+                }
+                
+
             }
 
             row++;
