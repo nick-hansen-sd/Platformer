@@ -273,9 +273,9 @@ MonoBehaviour:
   levelFile: {fileID: 4900000, guid: 3cc86b075fe911c4b8b8055a38219a43, type: 3}
   levelRoot: {fileID: 406602702}
   rockPrefab: {fileID: 6195895541108335580, guid: 4620420a7425c834aa44f5397355d112, type: 3}
-  brickPrefab: {fileID: 0}
-  questionBoxPrefab: {fileID: 0}
-  stonePrefab: {fileID: 0}
+  brickPrefab: {fileID: 6195895541108335580, guid: bc9388f41ee66ea48bf70e1b10ce7e9d, type: 3}
+  questionBoxPrefab: {fileID: 6195895541108335580, guid: 4fc78dc215e4be94597c77e0bb5dd426, type: 3}
+  stonePrefab: {fileID: 6195895541108335580, guid: 620698369e759a346be964daa324ff81, type: 3}
 --- !u!4 &610288774
 Transform:
   m_ObjectHideFlags: 0
