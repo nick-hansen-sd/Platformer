@@ -16,9 +16,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (timeLeft > 0) {
-            timeLeft -= Time.deltaTime;
-            timeText.text = $"Time\n{((int)timeLeft).ToString()}";
+        timeLeft -= Time.deltaTime;
+        timeText.text = $"Time\n{((int)timeLeft).ToString()}";
+        if (timeLeft < 0)
+        {
+            timeLeft = 0;
         }
     }
 }
