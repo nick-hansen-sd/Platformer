@@ -38,7 +38,7 @@ public class LevelParser : MonoBehaviour
     public GameObject rockPrefab;
     public GameObject brickPrefab;
     public GameObject questionBoxPrefab;
-    public GameObject strongPrefab;
+    public GameObject stonePrefab;
 
     void Start()
     {
