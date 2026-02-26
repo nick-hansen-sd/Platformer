@@ -204,7 +204,7 @@ Transform:
   m_GameObject: {fileID: 334528594}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.47, y: 1.17, z: 0}
+  m_LocalPosition: {x: 17.47, y: 1.17, z: 0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -897,7 +897,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 10
+  far clip plane: 11.75
   field of view: 60
   orthographic: 1
   orthographic size: 7.5
@@ -1053,6 +1053,28 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.9, z: 0.05}
+--- !u!95 &1097432511
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097432507}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0cc76d0e45b3bf24f95d4b73817e7d15, type: 3}
+  m_Controller: {fileID: 9100000, guid: 41c7a836edbf59c458c6cc33e4994051, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1121970757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1224,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cc76d0e45b3bf24f95d4b73817e7d15, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1097432511}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cc76d0e45b3bf24f95d4b73817e7d15, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1097432509}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cc76d0e45b3bf24f95d4b73817e7d15, type: 3}
       insertIndex: -1
@@ -1318,7 +1343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 210.91, y: -11.2}
+  m_AnchoredPosition: {x: 210.91, y: -11.200012}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2145787593

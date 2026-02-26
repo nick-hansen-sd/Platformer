@@ -13,6 +13,7 @@ public class CharacterDriver : MonoBehaviour
 
     Vector2 _velocity;
     CharacterController _controller;
+    Animator _animator;
     Quaternion facingLeft;
     Quaternion facingRight;
 
@@ -22,6 +23,7 @@ public class CharacterDriver : MonoBehaviour
         facingRight = Quaternion.Euler(0f, 90f, 0f);
         facingLeft = Quaternion.Euler(0f, 270f, 0f);
         _controller = GetComponent<CharacterController>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -89,5 +91,7 @@ public class CharacterDriver : MonoBehaviour
         {
             _velocity.x = 0f;
         }
+
+        _animator.SetFloat("Speed", Mathf.Abs(deltaX));
     }
 }
