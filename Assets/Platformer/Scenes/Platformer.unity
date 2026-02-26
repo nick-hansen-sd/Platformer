@@ -413,6 +413,8 @@ MonoBehaviour:
   brickPrefab: {fileID: 6195895541108335580, guid: bc9388f41ee66ea48bf70e1b10ce7e9d, type: 3}
   questionBoxPrefab: {fileID: 6195895541108335580, guid: 4fc78dc215e4be94597c77e0bb5dd426, type: 3}
   stonePrefab: {fileID: 6195895541108335580, guid: 620698369e759a346be964daa324ff81, type: 3}
+  hazardPrefab: {fileID: 6195895541108335580, guid: ba0038aa304fce64c833bf4370c3b2f8, type: 3}
+  finishPrefab: {fileID: 2952914211512498578, guid: fd5a53932f436c54084a837ce1e89a13, type: 3}
 --- !u!4 &610288774
 Transform:
   m_ObjectHideFlags: 0

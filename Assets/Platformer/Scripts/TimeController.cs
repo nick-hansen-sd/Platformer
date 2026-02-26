@@ -6,6 +6,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public TextMeshProUGUI timeText;
     float timeLeft = 500;
+    bool levelFailed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,9 +19,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         timeLeft -= Time.deltaTime;
         timeText.text = $"Time\n{((int)timeLeft).ToString()}";
-        if (timeLeft < 0)
+        if (timeLeft <= 0)
         {
             timeLeft = 0;
+            if (!levelFailed)
+            {
+                Debug.Log("Player failed");
+                levelFailed = true;
+            }
         }
     }
 }

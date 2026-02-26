@@ -39,6 +39,8 @@ public class LevelParser : MonoBehaviour
     public GameObject brickPrefab;
     public GameObject questionBoxPrefab;
     public GameObject stonePrefab;
+    public GameObject hazardPrefab;
+    public GameObject finishPrefab;
 
     void Start()
     {
@@ -82,18 +84,28 @@ public class LevelParser : MonoBehaviour
                 } else if (currentChar == '?')
                 {
                     Vector3 position = new Vector3(columnIndex + 0.5f, row + 0.5f, 0);
-                    Transform rockInstance = Instantiate(questionBoxPrefab, levelRoot).transform;
-                    rockInstance.position = position;
+                    Transform questionInstance = Instantiate(questionBoxPrefab, levelRoot).transform;
+                    questionInstance.position = position;
                 } else if (currentChar == 's')
                 {
                     Vector3 position = new Vector3(columnIndex + 0.5f, row + 0.5f, 0);
-                    Transform rockInstance = Instantiate(stonePrefab, levelRoot).transform;
-                    rockInstance.position = position;
+                    Transform stoneInstance = Instantiate(stonePrefab, levelRoot).transform;
+                    stoneInstance.position = position;
                 } else if (currentChar == 'b')
                 {
                     Vector3 position = new Vector3(columnIndex + 0.5f, row + 0.5f, 0);
-                    Transform rockInstance = Instantiate(brickPrefab, levelRoot).transform;
-                    rockInstance.position = position;
+                    Transform brickInstance = Instantiate(brickPrefab, levelRoot).transform;
+                    brickInstance.position = position;
+                } else if (currentChar == 'h')
+                {
+                    Vector3 position = new Vector3(columnIndex + 0.5f, row + 0.5f, 0);
+                    Transform hazardInstance = Instantiate(hazardPrefab, levelRoot).transform;
+                    hazardInstance.position = position;
+                } else if (currentChar == 'f')
+                {
+                    Vector3 position = new Vector3(columnIndex + 0.5f, row + 0.5f, 0);
+                    Transform finishInstance = Instantiate(finishPrefab, levelRoot).transform;
+                    finishInstance.position = position;
                 }
                 
 
