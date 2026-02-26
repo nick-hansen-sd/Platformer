@@ -19,8 +19,8 @@ public class CharacterDriver : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        facingRight = Quaternion.identity;
-        facingLeft = Quaternion.Euler(0f, 180f, 0f);
+        facingRight = Quaternion.Euler(0f, 90f, 0f);
+        facingLeft = Quaternion.Euler(0f, 270f, 0f);
         _controller = GetComponent<CharacterController>();
     }
 
