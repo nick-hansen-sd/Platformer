@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bebc5e1e08d2ba4e8e47295d2195289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFile: {fileID: 4900000, guid: 3cc86b075fe911c4b8b8055a38219a43, type: 3}
+  levelFile: {fileID: 4900000, guid: 9c1613f192e0f4b43b583169c0a21f16, type: 3}
   levelRoot: {fileID: 406602702}
   rockPrefab: {fileID: 6195895541108335580, guid: 4620420a7425c834aa44f5397355d112, type: 3}
   brickPrefab: {fileID: 6195895541108335580, guid: bc9388f41ee66ea48bf70e1b10ce7e9d, type: 3}
@@ -852,6 +852,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -977,6 +978,19 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06821192dfc77d34fa225acb82f47b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LookAt
+  target: {fileID: 1097432510}
 --- !u!1 &982391922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1069,11 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.9, z: 0.05}
+--- !u!4 &1097432510 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0cc76d0e45b3bf24f95d4b73817e7d15, type: 3}
+  m_PrefabInstance: {fileID: 1622353210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1097432511
 Animator:
   serializedVersion: 7
