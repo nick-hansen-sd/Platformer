@@ -95,4 +95,16 @@ public class CharacterDriver : MonoBehaviour
         _animator.SetFloat("Speed", Mathf.Abs(deltaX));
         _animator.SetBool("Grounded", _controller.isGrounded);
     }
+
+    void OnTriggerEnter(Collider other) 
+    {
+        if (other.gameObject.CompareTag("Hazard"))
+        {
+            Debug.Log("Player failed");
+        }
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            Debug.Log("Player won");
+        }
+    }
 }
